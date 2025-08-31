@@ -23,11 +23,7 @@ export default function Home() {
             <div className="font-extrabold text-6xl">Jason Kwan</div>
             <div>
               <span className="font-semibold text-2xl">
-                I&apos;m a 4th year Computer Science student at Western University and
-                <span className="font-extrabold text-green-400">
-                  {" "}
-                  currently looking for software development-related internships!
-                </span>
+                I&apos;m a final year Computer Science student at Western University.
               </span>
             </div>
           </div>
