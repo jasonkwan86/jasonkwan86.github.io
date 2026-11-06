@@ -74,6 +74,32 @@ export default function Home() {
           </ProjectText>
           <Image src="./images/projects/Assn_5_Demonstration.PNG" width={500} height={500} alt="Assn5" />
         </Section>
+        <Section>
+          <ProjectText>
+            <ProjectTitle>Huffman Image Compression</ProjectTitle>
+            <ProjectDescription>
+              Assignment for <CourseHighlight>Digital Image Processing</CourseHighlight> written in{" "}
+              <LanguageHighlight>C</LanguageHighlight>. Implements Huffman encoding and decoding algorithms to compress
+              and decompress PGM (grayscale) images. Includes frequency analysis, Huffman tree generation, and bit-level
+              data storage for optimal compression.
+            </ProjectDescription>
+            <ProjectLink externalLink={append_to_github_url("/school/tree/main/Year_5/cs-4481/assignment-2")} />
+          </ProjectText>
+          <Image src="./images/projects/Huffman_Sample.pgm" width={500} height={500} alt="Huffman Compression" />
+        </Section>
+        <Section>
+          <ProjectText>
+            <ProjectTitle>Marching Cubes - 3D Isosurface Extraction</ProjectTitle>
+            <ProjectDescription>
+              Final project for <CourseHighlight>Computer Graphics</CourseHighlight> written in{" "}
+              <LanguageHighlight>C++</LanguageHighlight> with <LanguageHighlight>OpenGL</LanguageHighlight>. Implements
+              the marching cubes algorithm to extract 3D isosurfaces from scalar fields. Visualizes multiple functions
+              with Phong shading and interactive camera controls.
+            </ProjectDescription>
+            <ProjectLink externalLink={append_to_github_url("/school/tree/main/Year_4/CS_3388/Assignments/Assignment_5")} />
+          </ProjectText>
+          <Image src="./images/projects/MarchingCubes_Sphere.PNG" width={500} height={500} alt="Marching Cubes Sphere" />
+        </Section>
       </div>
 
       {/* About */}
