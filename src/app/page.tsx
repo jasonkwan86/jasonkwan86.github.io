@@ -85,7 +85,32 @@ export default function Home() {
             </ProjectDescription>
             <ProjectLink externalLink={append_to_github_url("/school/tree/main/Year_5/cs-4481/assignment-2")} />
           </ProjectText>
-          <Image src="./images/projects/Huffman_Sample.pgm" width={500} height={500} alt="Huffman Compression" />
+          <div className="flex flex-col items-center gap-4">
+            <Image src="./images/projects/Huffman_Boats.png" width={500} height={469} alt="Huffman decoded boats image" />
+            <div className="flex flex-wrap justify-center gap-3">
+              <a
+                href="./downloads/boats_original.pgm"
+                download
+                className="px-4 py-2 rounded bg-indigo-600 text-white font-semibold hover:bg-indigo-700"
+              >
+                Download original (.pgm)
+              </a>
+              <a
+                href="./downloads/boats_compressed.huff"
+                download
+                className="px-4 py-2 rounded bg-indigo-600 text-white font-semibold hover:bg-indigo-700"
+              >
+                Download compressed
+              </a>
+              <a
+                href="./downloads/boats_decoded.pgm"
+                download
+                className="px-4 py-2 rounded bg-indigo-600 text-white font-semibold hover:bg-indigo-700"
+              >
+                Download decoded (.pgm)
+              </a>
+            </div>
+          </div>
         </Section>
         <Section>
           <ProjectText>
@@ -98,7 +123,11 @@ export default function Home() {
             </ProjectDescription>
             <ProjectLink externalLink={append_to_github_url("/school/tree/main/Year_4/CS_3388/Assignments/Assignment_5")} />
           </ProjectText>
-          <Image src="./images/projects/MarchingCubes_Sphere.PNG" width={500} height={500} alt="Marching Cubes Sphere" />
+          <div className="flex flex-col items-center gap-4">
+            <Image src="./images/projects/MarchingCubes_Sphere.PNG" width={500} height={431} alt="Marching Cubes sphere" />
+            <Image src="./images/projects/MarchingCubes_Cone.PNG" width={500} height={455} alt="Marching Cubes cone" />
+            <Image src="./images/projects/MarchingCubes_Wave.PNG" width={500} height={436} alt="Marching Cubes wave" />
+          </div>
         </Section>
       </div>
 
