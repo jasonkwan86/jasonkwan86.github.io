@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import NavbarLink from './NavbarLink';
+import NavbarLink from '@/components/Navbar/NavbarLink';
 
 function Navbar() {
   const logoDimensions = 42;

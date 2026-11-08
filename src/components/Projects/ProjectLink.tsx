@@ -1,5 +1,5 @@
 import React from 'react'
-import ExternalLink from './ExternalLink'
+import ExternalLink from '@/components/Projects/ExternalLink'
 
 function ProjectLink({externalLink}: {externalLink: string}) {
   return (

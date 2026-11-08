@@ -10,6 +10,8 @@ import LanguageHighlight from "@/components/Projects/LanguageHighlight";
 import CourseHighlight from "@/components/Projects/CourseHighlight";
 import ExternalLink from "@/components/Projects/ExternalLink";
 import ProjectLink from "@/components/Projects/ProjectLink";
+import ProjectImages from "@/components/Projects/ProjectImages";
+import DownloadGroup from "@/components/Projects/DownloadGroup";
 import { append_to_github_url } from "@/types";
 
 export default function Home() {
@@ -85,32 +87,24 @@ export default function Home() {
             </ProjectDescription>
             <ProjectLink externalLink={append_to_github_url("/school/tree/main/Year_5/cs-4481/assignment-2")} />
           </ProjectText>
-          <div className="flex flex-col items-center gap-4">
-            <Image src="./images/projects/Huffman_Boats.png" width={500} height={469} alt="Huffman decoded boats image" />
-            <div className="flex flex-wrap justify-center gap-3">
-              <a
-                href="./downloads/boats_original.pgm"
-                download
-                className="px-4 py-2 rounded bg-indigo-600 text-white font-semibold hover:bg-indigo-700"
-              >
-                Download original (.pgm)
-              </a>
-              <a
-                href="./downloads/boats_compressed.huff"
-                download
-                className="px-4 py-2 rounded bg-indigo-600 text-white font-semibold hover:bg-indigo-700"
-              >
-                Download compressed
-              </a>
-              <a
-                href="./downloads/boats_decoded.pgm"
-                download
-                className="px-4 py-2 rounded bg-indigo-600 text-white font-semibold hover:bg-indigo-700"
-              >
-                Download decoded (.pgm)
-              </a>
-            </div>
-          </div>
+          <ProjectImages
+            images={[
+              {
+                src: "./images/projects/Huffman_Boats.png",
+                width: 500,
+                height: 469,
+                alt: "Huffman decoded boats image",
+              },
+            ]}
+          >
+            <DownloadGroup
+              files={[
+                { href: "./downloads/boats_original.pgm", label: "Download original (.pgm)" },
+                { href: "./downloads/boats_compressed.huff", label: "Download compressed" },
+                { href: "./downloads/boats_decoded.pgm", label: "Download decoded (.pgm)" },
+              ]}
+            />
+          </ProjectImages>
         </Section>
         <Section>
           <ProjectText>
@@ -123,11 +117,21 @@ export default function Home() {
             </ProjectDescription>
             <ProjectLink externalLink={append_to_github_url("/school/tree/main/Year_4/CS_3388/Assignments/Assignment_5")} />
           </ProjectText>
-          <div className="flex flex-col items-center gap-4">
-            <Image src="./images/projects/MarchingCubes_Sphere.PNG" width={500} height={431} alt="Marching Cubes sphere" />
-            <Image src="./images/projects/MarchingCubes_Cone.PNG" width={500} height={455} alt="Marching Cubes cone" />
-            <Image src="./images/projects/MarchingCubes_Wave.PNG" width={500} height={436} alt="Marching Cubes wave" />
-          </div>
+          <ProjectImages
+            images={[
+              { src: "./images/projects/MarchingCubes_Sphere.PNG", width: 500, height: 431, alt: "Marching Cubes sphere" },
+              { src: "./images/projects/MarchingCubes_Cone.PNG", width: 500, height: 455, alt: "Marching Cubes cone" },
+              { src: "./images/projects/MarchingCubes_Wave.PNG", width: 500, height: 436, alt: "Marching Cubes wave" },
+            ]}
+          >
+            <DownloadGroup
+              files={[
+                { href: "./downloads/SphereThing.ply", label: "Download sphere (.ply)" },
+                { href: "./downloads/ConeThing.ply", label: "Download cone (.ply)" },
+                { href: "./downloads/WaveThing.ply", label: "Download wave (.ply)" },
+              ]}
+            />
+          </ProjectImages>
         </Section>
       </div>
 
