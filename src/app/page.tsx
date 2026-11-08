@@ -17,22 +17,24 @@ import { append_to_github_url } from "@/types";
 export default function Home() {
   return (
     <section id="home">
-      <Navbar />
-      <div className="p-10 min-h-[93vh] bg-gradient-to-tr from-indigo-400 to-indigo-600 grid place-items-center">
-        <Section>
-          <div className="max-w-md text-black grid place-items-center">
-            <div className=" text-3xl">Hello there! My name is</div>
-            <div className="font-extrabold text-6xl">Jason Kwan</div>
-            <div>
-              <span className="font-semibold text-2xl">
-                I&apos;m a final year Computer Science student at Western University.
-              </span>
+      <div className="h-[100dvh] flex flex-col">
+        <Navbar />
+        <div className="flex-1 p-10 bg-gradient-to-tr from-indigo-400 to-indigo-600 grid place-items-center">
+          <Section>
+            <div className="max-w-md text-black grid place-items-center">
+              <div className=" text-3xl">Hello there! I&apos;m</div>
+              <div className="font-extrabold text-6xl">Jason Kwan</div>
+              <div>
+                <span className="font-semibold text-2xl">
+                  I&apos;m a Computer Science graduate from Western University.
+                </span>
+              </div>
             </div>
-          </div>
-          <div className="grid place-items-center">
-            <Portrait />
-          </div>
-        </Section>
+            <div className="grid place-items-center">
+              <Portrait />
+            </div>
+          </Section>
+        </div>
       </div>
 
       {/* Projects */}
@@ -142,15 +144,14 @@ export default function Home() {
         <Section>
           <div className="max-w-lg">
             <span className=" font-bold">
-              My name is Jason and I&apos;m an &#40;aspiring&#41;{" "}
+              My name is Jason and I&apos;m a{" "}
               <span className="font-bold text-lg text-blue-600">Software Developer.</span>
             </span>
             <div className="pt-5">
-              My hobbies include learning new technologies, or working on exciting new projects - usually both. I am
-              pursuing a bachelor&apos;s degree in Computer Science with a minor in Game Development. I previously
+              My hobbies include learning new technologies, or working on exciting new projects - usually both. I graduated with a bachelor&apos;s degree in Computer Science with a minor in Game Development. I previously
               majored in Medical Sciences, but switched after realizing my passion for Computer Science. My current
-              obsession is prototyping games in <span className="font-bold">Unity</span> in hopes of making something
-              extraordinary - someday.
+              obsession is prototyping games in <span className="font-bold">Godot</span> in hopes of making something
+              cool someday.
             </div>
             <ExternalLink
               link="https://docs.google.com/document/d/1AlARb_llPzyZaCGtmnjThoUqZKI6d7YZ/edit?usp=sharing&ouid=101263568990628764477&rtpof=true&sd=true"
