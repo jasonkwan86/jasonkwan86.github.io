@@ -12,6 +12,7 @@ import ExternalLink from "@/components/Projects/ExternalLink";
 import ProjectLink from "@/components/Projects/ProjectLink";
 import ProjectImages from "@/components/Projects/ProjectImages";
 import DownloadGroup from "@/components/Projects/DownloadGroup";
+import ModelViewer from "@/components/Projects/ModelViewer";
 import { append_to_github_url } from "@/types";
 
 export default function Home() {
@@ -119,21 +120,15 @@ export default function Home() {
             </ProjectDescription>
             <ProjectLink externalLink={append_to_github_url("/school/tree/main/Year_4/CS_3388/Assignments/Assignment_5")} />
           </ProjectText>
-          <ProjectImages
-            images={[
-              { src: "./images/projects/MarchingCubes_Sphere.PNG", width: 500, height: 431, alt: "Marching Cubes sphere" },
-              { src: "./images/projects/MarchingCubes_Cone.PNG", width: 500, height: 455, alt: "Marching Cubes cone" },
-              { src: "./images/projects/MarchingCubes_Wave.PNG", width: 500, height: 436, alt: "Marching Cubes wave" },
-            ]}
-          >
-            <DownloadGroup
-              files={[
-                { href: "./downloads/SphereThing.ply", label: "Download sphere (.ply)" },
-                { href: "./downloads/ConeThing.ply", label: "Download cone (.ply)" },
-                { href: "./downloads/WaveThing.ply", label: "Download wave (.ply)" },
+          <div className="w-[500px] max-w-full">
+            <ModelViewer
+              models={[
+                { label: "Sphere", src: "./downloads/SphereThing.ply" },
+                { label: "Cone", src: "./downloads/ConeThing.ply" },
+                { label: "Wave", src: "./downloads/WaveThing.ply" },
               ]}
             />
-          </ProjectImages>
+          </div>
         </Section>
       </div>
 
