@@ -149,7 +149,7 @@ export default function Home() {
               cool someday.
             </div>
             <ExternalLink
-              link="https://docs.google.com/document/d/1AlARb_llPzyZaCGtmnjThoUqZKI6d7YZ/edit?usp=sharing&ouid=101263568990628764477&rtpof=true&sd=true"
+              link="https://docs.google.com/document/d/1-owTRe4qZKyEfgndNReaWeBeaFz9l7Iezmw9SjjtLKc/edit?usp=sharing"
               logoSrc="./icons/LinkIcon.png"
             >
               Resume
