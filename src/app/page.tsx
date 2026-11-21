@@ -43,7 +43,7 @@ export default function Home() {
         <SectionTitle id="projects">Projects</SectionTitle>
         <Section>
           <ProjectText>
-            <ProjectTitle>Western Nav</ProjectTitle>
+            <ProjectTitle text="Western Nav" />
             <ProjectDescription>
               Course project for <CourseHighlight>Introduction to Software Engineering</CourseHighlight> written in{" "}
               <LanguageHighlight>Java</LanguageHighlight>. Navigation app that lets users maneuver through buildings,
@@ -55,7 +55,7 @@ export default function Home() {
         </Section>
         <Section>
           <ProjectText>
-            <ProjectTitle>Alexa Clone</ProjectTitle>
+            <ProjectTitle text="Alexa Clone" />
             <ProjectDescription>
               Course project for <CourseHighlight>Object Oriented Programming</CourseHighlight> written in{" "}
               <LanguageHighlight>C++</LanguageHighlight>. Nicknamed Chungus Assistant, uses ChatGPT&apos;s api to give
@@ -67,7 +67,7 @@ export default function Home() {
         </Section>
         <Section>
           <ProjectText>
-            <ProjectTitle>Operating Systems Simulator</ProjectTitle>
+            <ProjectTitle text="Operating Systems Simulator" />
             <ProjectDescription>
               Final project for <CourseHighlight>Operating Systems</CourseHighlight> written in{" "}
               <LanguageHighlight>C</LanguageHighlight>. Uses Unix multithreading and mutex locks to solve a theoretical
@@ -81,7 +81,7 @@ export default function Home() {
         </Section>
         <Section>
           <ProjectText>
-            <ProjectTitle>Huffman Image Compression</ProjectTitle>
+            <ProjectTitle text="Huffman Image Compression" />
             <ProjectDescription>
               Assignment for <CourseHighlight>Digital Image Processing</CourseHighlight> written in{" "}
               <LanguageHighlight>C</LanguageHighlight>. Implements Huffman encoding and decoding algorithms to compress
@@ -111,7 +111,7 @@ export default function Home() {
         </Section>
         <Section>
           <ProjectText>
-            <ProjectTitle>Marching Cubes - 3D Isosurface Extraction</ProjectTitle>
+            <ProjectTitle text="Marching Cubes - 3D Isosurface Extraction" />
             <ProjectDescription>
               Final project for <CourseHighlight>Computer Graphics</CourseHighlight> written in{" "}
               <LanguageHighlight>C++</LanguageHighlight> with <LanguageHighlight>OpenGL</LanguageHighlight>. Implements
