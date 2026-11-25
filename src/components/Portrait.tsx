@@ -10,7 +10,7 @@ export default function Portrait() {
         width={portraitDimensions}
         height={portraitDimensions}
         alt="selfie"
-        className="rounded-[6rem]"
+        className="rounded-[4rem] md:rounded-[6rem] w-full max-w-[400px] h-auto"
     />
   )
 }

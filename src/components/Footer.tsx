@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="min-h-[50px] py-6 opacity-80 bg-gradient-to-br from-gray-700 to-gray-800">
-      <div className="flex justify-center items-center gap-10 ">
+      <div className="flex justify-center items-center gap-8 ">
         <GitHubIcon classes={iconClasses} />
         <LinkedinIcon classes={iconClasses} />
         <EmailIcon classes={iconClasses} />

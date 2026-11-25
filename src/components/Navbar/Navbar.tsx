@@ -6,9 +6,9 @@ function Navbar() {
   const logoDimensions = 42;
 
   return (
-      <header className='flex justify-between gap-10 brightness-200 opacity-95 bg-gradient-to-l from-blue-900 to-cyan-900 pr-10 py-6'>
+      <header className='flex justify-between gap-4 md:gap-10 items-center brightness-200 opacity-95 bg-gradient-to-l from-blue-900 to-cyan-900 pr-4 md:pr-10 py-4 md:py-6'>
         {/* Main Logo */}
-        <span className=' pl-40'>
+        <span className='pl-4 md:pl-40'>
           <Image 
             src='./icons/JKSignature.png'
             className=' fill-white object-fill'
@@ -17,7 +17,7 @@ function Navbar() {
             alt="Logo"
           />
         </span>
-        <ul className='flex gap-10'>
+        <ul className='flex gap-4 md:gap-10'>
           <li>
             <NavbarLink link="#about">About</NavbarLink>
           </li>

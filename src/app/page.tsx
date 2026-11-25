@@ -18,15 +18,15 @@ import { append_to_github_url } from "@/types";
 export default function Home() {
   return (
     <section id="home">
-      <div className="h-[100dvh] flex flex-col">
+      <div className="min-h-[100dvh] flex flex-col">
         <Navbar />
-        <div className="flex-1 p-10 bg-gradient-to-tr from-indigo-400 to-indigo-600 grid place-items-center">
+        <div className="flex-1 p-6 md:p-10 bg-gradient-to-tr from-indigo-400 to-indigo-600 grid place-items-center">
           <Section>
-            <div className="max-w-md text-black grid place-items-center">
-              <div className=" text-3xl">Hello there! I&apos;m</div>
-              <div className="font-extrabold text-6xl">Jason Kwan</div>
+            <div className="max-w-md text-black grid place-items-center text-center md:text-left">
+              <div className="text-2xl md:text-3xl">Hello there! I&apos;m</div>
+              <div className="font-extrabold text-4xl md:text-6xl">Jason Kwan</div>
               <div>
-                <span className="font-semibold text-2xl">
+                <span className="font-semibold text-xl md:text-2xl">
                   I&apos;m a Computer Science graduate from Western University.
                 </span>
               </div>
@@ -51,7 +51,7 @@ export default function Home() {
             </ProjectDescription>
             <ProjectLink externalLink={append_to_github_url("/school/tree/main/Year_2/CS 2212/Course Project")} />
           </ProjectText>
-          <Image src="./images/projects/WesternNav1.PNG" width={500} height={100} alt="western nav logo" />
+          <Image src="./images/projects/WesternNav1.PNG" width={500} height={100} alt="western nav logo" className="w-full max-w-[500px] h-auto" />
         </Section>
         <Section>
           <ProjectText>
@@ -63,7 +63,7 @@ export default function Home() {
             </ProjectDescription>
             <ProjectLink externalLink={append_to_github_url("/school/tree/main/Year_3/CS3307")} />
           </ProjectText>
-          <Image src="./images/projects/alexa.png" width={500} height={500} alt="alexa" />
+          <Image src="./images/projects/alexa.png" width={500} height={500} alt="alexa" className="w-full max-w-[500px] h-auto" />
         </Section>
         <Section>
           <ProjectText>
@@ -77,7 +77,7 @@ export default function Home() {
               externalLink={append_to_github_url("/school/blob/main/Year_3/CS3305/Assignment5/assignment-5.c")}
             />
           </ProjectText>
-          <Image src="./images/projects/Assn_5_Demonstration.PNG" width={500} height={500} alt="Assn5" />
+          <Image src="./images/projects/Assn_5_Demonstration.PNG" width={500} height={500} alt="Assn5" className="w-full max-w-[500px] h-auto" />
         </Section>
         <Section>
           <ProjectText>

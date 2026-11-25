@@ -6,7 +6,7 @@ function ExternalLink({ children, link, logoSrc }: { children: React.ReactNode, 
 
   return (
     <a 
-        className='flex justify-center place-items-center gap-1 w-[10vw] h-[5vh] bg-gradient-to-r from-emerald-300 to-emerald-400 rounded-lg my-10 mx-10 shadow-2xl hover:from-slate-300 hover:to-slate-400'
+        className='flex justify-center items-center gap-1 w-fit px-6 py-3 text-lg md:text-base md:w-64 md:h-16 md:px-0 md:py-0 whitespace-nowrap self-center md:self-start bg-gradient-to-r from-emerald-300 to-emerald-400 rounded-lg my-6 md:my-10 mx-4 md:mx-10 shadow-2xl hover:from-slate-300 hover:to-slate-400'
         href={link}
         target='_blank'
     >

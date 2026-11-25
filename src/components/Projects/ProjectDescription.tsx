@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProjectDescription({ children }: { children: React.ReactNode }) {
   return (
-    <div className='max-w-xl p-5'>
+    <div className='max-w-xl p-3 md:p-5'>
         {children}
     </div>
   )

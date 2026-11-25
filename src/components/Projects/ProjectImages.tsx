@@ -7,7 +7,7 @@ function ProjectImages({ images, children }: { images: ProjectImage[]; children?
   return (
     <div className="flex flex-col items-center gap-4">
       {images.map((image) => (
-        <Image key={image.src} src={image.src} width={image.width} height={image.height} alt={image.alt} />
+        <Image key={image.src} src={image.src} width={image.width} height={image.height} alt={image.alt} className="w-full max-w-[500px] h-auto" />
       ))}
       {children}
     </div>
